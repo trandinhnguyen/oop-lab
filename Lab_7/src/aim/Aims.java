@@ -88,6 +88,10 @@ public class Aims {
     }
 
     public static void main(String[] args) {
+        Thread thread = new Thread(new MemoryDaemon());
+        thread.setDaemon(true);
+        thread.start();
+
         boolean exit = false;
         while (!exit) {
 
