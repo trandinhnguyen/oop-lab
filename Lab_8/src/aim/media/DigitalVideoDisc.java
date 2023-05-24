@@ -24,7 +24,7 @@ public class DigitalVideoDisc extends Disc implements Playable, Comparable {
         StringTokenizer st = new StringTokenizer(title);
 
         while (st.hasMoreTokens()) {
-            if (lowerTitle.indexOf(st.nextToken().toLowerCase()) == -1) {
+            if (!lowerTitle.contains(st.nextToken().toLowerCase())) {
                 return false;
             }
         }
@@ -36,10 +36,25 @@ public class DigitalVideoDisc extends Disc implements Playable, Comparable {
         System.out.println("DVD length: " + this.getLength());
     }
 
+//    public int compareTo(Object obj) {
+//        DigitalVideoDisc item = (DigitalVideoDisc) obj;
+//        char a = Character.toLowerCase(this.getTitle().charAt(0));
+//        char b = Character.toLowerCase(item.getTitle().charAt(0));
+//        if (a > b) {
+//            return 1;
+//        } else if (a < b) {
+//            return -1;
+//        } else {
+//            return 0;
+//        }
+//    }
+
     public int compareTo(Object obj) {
-        DigitalVideoDisc dvd = (DigitalVideoDisc) obj;
-        if (this.getTitle() == dvd.getTitle()) {
+        DigitalVideoDisc item = (DigitalVideoDisc) obj;
+        if (this.getCost() < item.getCost()) {
             return 1;
+        } else if (this.getCost() > item.getCost()) {
+            return -1;
         } else {
             return 0;
         }

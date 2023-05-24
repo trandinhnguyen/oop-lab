@@ -30,4 +30,16 @@ public class Track implements Playable, Comparable {
         System.out.println("DVD length: " + this.getLength());
     }
 
+    public int compareTo(Object obj) {
+        Track item = (Track) obj;
+        char a = Character.toLowerCase(this.getTitle().charAt(0));
+        char b = Character.toLowerCase(item.getTitle().charAt(0));
+        if (a > b) {
+            return 1;
+        } else if (a < b) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
 }

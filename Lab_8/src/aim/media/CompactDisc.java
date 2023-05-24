@@ -53,10 +53,25 @@ public class CompactDisc extends Disc implements Playable, Comparable {
         }
     }
 
+    //    public int compareTo(Object obj) {
+//        CompactDisc item = (CompactDisc) obj;
+//        char a = Character.toLowerCase(this.getTitle().charAt(0));
+//        char b = Character.toLowerCase(item.getTitle().charAt(0));
+//        if (a > b) {
+//            return 1;
+//        } else if (a < b) {
+//            return -1;
+//        } else {
+//            return 0;
+//        }
+//    }
     public int compareTo(Object obj) {
-        CompactDisc cd = (CompactDisc) obj;
-        if (this.getTitle() == cd.getTitle()) {
+        CompactDisc item = (CompactDisc) obj;
+
+        if (this.getLength() < item.getLength()) {
             return 1;
+        } else if (this.getLength() > item.getLength()) {
+            return -1;
         } else {
             return 0;
         }
