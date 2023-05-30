@@ -1,9 +1,3 @@
-.idea/
-*.iml
-out/
-*.zip
-
-# JAVAFX
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
