@@ -16,4 +16,7 @@ module com.example.javafx {
 
     opens hellojavafx to javafx.fxml;
     exports hellojavafx;
+
+    opens flowpane to javafx.fxml;
+    exports flowpane;
 }

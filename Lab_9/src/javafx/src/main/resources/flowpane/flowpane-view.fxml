@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<FlowPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="198.0" prefWidth="319.0" rowValignment="TOP" vgap="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button mnemonicParsing="false" text="Button" />
+      <Button mnemonicParsing="false" prefHeight="63.0" prefWidth="106.0" text="Button" />
+      <TextField />
+      <CheckBox mnemonicParsing="false" text="CheckBox" />
+      <RadioButton mnemonicParsing="false" text="RadioButton" />
+   </children>
+</FlowPane>
