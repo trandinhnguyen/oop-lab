@@ -1,4 +1,4 @@
-package com.example.hellojavafx;
+package hellojavafx;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,11 +10,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class HelloApplication extends Application {
+public class MyApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         try {
-            Parent root = FXMLLoader.load(Objects.requireNonNull(HelloApplication.class.getResource("hello-view.fxml")));
+            Parent root = FXMLLoader.load(Objects.requireNonNull(MyApplication.class.getResource("my-view.fxml")));
             stage.setTitle("My Application");
             stage.setScene(new Scene(root));
             stage.show();

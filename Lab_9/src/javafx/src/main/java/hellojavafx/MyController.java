@@ -1,4 +1,4 @@
-package com.example.hellojavafx;
+package hellojavafx;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -15,7 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-public class HelloController implements Initializable {
+public class MyController implements Initializable {
     @FXML
     private Button myButton;
     @FXML
