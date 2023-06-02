@@ -2,6 +2,7 @@
 *.iml
 out/
 *.zip
+zip/
 
 # JAVAFX
 target/

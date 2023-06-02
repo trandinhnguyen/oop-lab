@@ -19,4 +19,7 @@ module com.example.javafx {
 
     opens flowpane to javafx.fxml;
     exports flowpane;
+
+    opens round to javafx.fxml;
+    exports round;
 }
